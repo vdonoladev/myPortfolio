@@ -1,4 +1,4 @@
-import { ArrowRight, ChevronDown, Play, Sparkles } from "lucide-react";
+import { MessageCircle, ChevronDown, Play, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { codeExamples, floatingCards } from "../data/CodeExamples";
@@ -60,8 +60,8 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in slide-in-from-bottom duration-700 delay-300">
               <a href="https://wa.me/5524998652938?text=Ol%C3%A1%2C%20V%C3%ADctor!%20Vi%20seu%20trabalho%20e%20queria%20conversar%20sobre%20um%20site%20para%20meu%20projeto." target="_blank" rel="noopener noreferrer">
                 <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-blue-600 to-blue-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
-                  <span>Start Coding Free</span>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  <span>Vamos criar algo incrível?</span>
+                  <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
               </a>
 

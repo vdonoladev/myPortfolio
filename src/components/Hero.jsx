@@ -37,26 +37,24 @@ export default function Hero() {
             <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700">
               <Sparkles className="w-4 h-4 text-blue-400" />
               <span className="text-xs sm:text-sm text-blue-300">
-                Introducing CodeFlow AI
+                Desenvolvendo o Amanhã, Hoje
               </span>
             </div>
 
             <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight">
               <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
-                Code Faster
+                Ideias que Inspiram
               </span>
               <span className="bg-gradient-to-b from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent block mb-1 sm:mb-2">
-                Build Better
+                Códigos que Transformam
               </span>
               <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
-                With CodeFlow AI
+                Soluções que Entregam
               </span>
             </h1>
 
             <p className="text-md sm:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-6 sm:mb-8 animate-in slide-in-from-bottom duration-700 delay-200 leading-relaxed">
-              Accelerate your development workflow with intelligent code
-              completion, automated testing, and smart debugging. Ship
-              production-ready code 10x faster.
+              Desenvolvimento web é mais do que código — é sobre criar interfaces que contam histórias, sistemas que resolvem problemas e experiências que marcam. Meu foco é transformar boas ideias em produtos digitais sólidos, rápidos e elegantes.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in slide-in-from-bottom duration-700 delay-300">

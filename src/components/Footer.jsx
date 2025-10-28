@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const footerLinks = {
   Product: ["Features", "Pricing", "Security", "Roadmap", "Changelog"],
@@ -24,7 +24,7 @@ export default function Footer() {
               <div className="rounded-lg">
                 <img
                   src="/logo.png"
-                  alt="CodeFlow Logo"
+                  alt="vdonoladev Logo"
                   className="w-6 h-6 sm:w-8 sm:h-8"
                 />
               </div>
@@ -34,30 +34,26 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-400 mb-4 sm:mb-6 max-w-xs mx-auto sm:mx-0 text-sm sm:text-base">
-              Transform your workflow with AI-powered tools and automation.
-              Built for modern teams.
+              Desenvolvimento de sites e aplicações modernas, rápidas e responsivas, criadas sob medida para sua marca.
             </p>
             <div className="flex justify-center sm:justify-start space-x-3 sm:space-x-4">
               <a
-                href="#"
-                className="p-2 sm:p-2.5 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors duration-200"
-              >
-                <Twitter className="w-5 h-5 sm:w-5 sm:h-5" />
-              </a>
-              <a
-                href="#"
-                className="p-2 sm:p-2.5 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors duration-200"
-              >
-                <Github className="w-5 h-5 sm:w-5 sm:h-5" />
-              </a>
-              <a
-                href="#"
+                href="https://linkedin.com/in/vdonoladev/"
+                target="_blank"
                 className="p-2 sm:p-2.5 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors duration-200"
               >
                 <Linkedin className="w-5 h-5 sm:w-5 sm:h-5" />
               </a>
               <a
-                href="#"
+                href="https://github.com/vdonoladev/"
+                target="_blank"
+                className="p-2 sm:p-2.5 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors duration-200"
+              >
+                <Github className="w-5 h-5 sm:w-5 sm:h-5" />
+              </a>
+              <a
+                href="mailto:contato.victordonolaferreira@outlook.com"
+                target="_blank"
                 className="p-2 sm:p-2.5 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors duration-200"
               >
                 <Mail className="w-5 h-5 sm:w-5 sm:h-5" />
@@ -94,7 +90,7 @@ export default function Footer() {
         <div className="pt-6 sm:pt-8 border-t-0 sm:border-t border-slate-800">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
             <p className="text-gray-400 text-xs sm:text-sm">
-              © 2025 CodeFlow. All rights reserved.
+              © 2025 Víctor Donola Ferreira. Todos os direitos reservados.
             </p>
             <div className="flex items-center space-x-4 sm:space-x-6 text-xs sm:text-sm">
               <a

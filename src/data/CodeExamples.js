@@ -1,87 +1,67 @@
 export const codeExamples = {
-  "App.jsx": `import { useState } from "react";
-import { CodeFlow } from "@codeflow/ai";
+  "App.jsx": `import { useState, useEffect } from "react";
 
-function App() {
-  const [code, setCode] = useState("");
+export default function App() {
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const handleAICompletion = async () => {
-    const suggestion = await CodeFlow.complete(code);
-    setCode(suggestion);
-  };
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/todos?_limit=5")
+      .then(res => res.json())
+      .then(json => { setData(json); setLoading(false); });
+  }, []);
 
   return (
-    <div className="app">
-      <CodeEditor 
-        onChange={setCode} 
-        onAI={handleAICompletion} 
-      />
+    <div className="p-6">
+      <h1 className="text-2xl font-bold mb-4">Últimas tarefas</h1>
+      {loading ? <p>Carregando...</p> :
+        <ul className="list-disc pl-6">{data.map(item => <li key={item.id}>{item.title}</li>)}</ul>
+      }
     </div>
   );
 }`,
   "Hero.jsx": `import { useState, useEffect } from "react";
-import { CodeFlow } from "@codeflow/ai";
 
 export default function Hero() {
-  const [isTyping, setIsTyping] = useState(false);
-  
+  const [text, setText] = useState("");
+  const message = "Transformando ideias em experiências digitais!";
+
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsTyping(true);
-    }, 1000);
-    return () => clearTimeout(timer);
+    let i = 0;
+    const interval = setInterval(() => {
+      setText(message.slice(0, i));
+      i++;
+      if(i > message.length) clearInterval(interval);
+    }, 50);
+    return () => clearInterval(interval);
   }, []);
 
-  const handleAISuggestion = async () => {
-    const suggestion = await CodeFlow.suggest("hero component");
-    return suggestion;
-  };
-
-  return (
-    <section className="hero">
-      <h1 className="text-4xl font-bold">
-        {isTyping ? "AI-Powered Development" : "Loading..."}
-      </h1>
-      <button onClick={handleAISuggestion}>
-        Get AI Suggestion
-      </button>
-    </section>
-  );
+  return <h1 className="text-4xl font-bold text-center p-6">{text}</h1>;
 }`,
   "Navbar.jsx": `import { useState } from "react";
-import { CodeFlow } from "@codeflow/ai";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [open, setOpen] = useState(false);
+  const [query, setQuery] = useState("");
 
-  const handleSearch = async () => {
-    const results = await CodeFlow.search(searchQuery);
-    return results;
-  };
+  const items = ["Home", "Projetos", "Contato", "Sobre"];
+  const results = items.filter(i => i.toLowerCase().includes(query.toLowerCase()));
 
   return (
-    <nav className="navbar">
-      <div className="nav-brand">
-        <h2>CodeFlow AI</h2>
+    <nav className="p-4 bg-gray-800 text-white flex flex-col sm:flex-row sm:justify-between">
+      <div className="flex items-center justify-between">
+        <span className="font-bold text-xl">Vdonoladev</span>
+        <button onClick={() => setOpen(!open)}>☰</button>
       </div>
-      
-      <div className="nav-search">
-        <input 
-          type="text"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search code..."
-        />
-        <button onClick={handleSearch}>Search</button>
-      </div>
-      
-      <button 
-        className="menu-toggle"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        ☰
-      </button>
+      {open && <ul className="flex flex-col sm:flex-row gap-4 mt-2">{items.map(i => <li key={i}>{i}</li>)}</ul>}
+      <input
+        type="text"
+        placeholder="Buscar..."
+        className="mt-2 p-1 rounded text-black"
+        value={query}
+        onChange={e => setQuery(e.target.value)}
+      />
+      {query && <ul className="bg-gray-700 p-2 mt-1 rounded">{results.map(r => <li key={r}>{r}</li>)}</ul>}
     </nav>
   );
 }`,
@@ -93,9 +73,9 @@ export const floatingCards = {
     iconColor: "text-blue-400",
     textColor: "text-blue-200",
     contentColor: "text-blue-300",
-    icon: "AI",
-    title: "Smart Completion",
-    content: "AI-powered code suggestions in real-time",
+    icon: "🌐",
+    title: "Fetch Dinâmico",
+    content: "Carrega dados reais via API e mostra loading",
   },
   "Hero.jsx": {
     bgColor: "bg-purple-500/20",
@@ -103,16 +83,16 @@ export const floatingCards = {
     textColor: "text-purple-200",
     contentColor: "text-purple-300",
     icon: "⚡",
-    title: "Auto Animation",
-    content: "Dynamic typing effects generated automatically",
+    title: "Texto Animado",
+    content: "Efeito de digitação dinâmica no Hero",
   },
   "Navbar.jsx": {
     bgColor: "bg-emerald-500/20",
     iconColor: "text-emerald-400",
     textColor: "text-emerald-200",
     contentColor: "text-emerald-300",
-    icon: "🔍",
-    title: "Smart Search",
-    content: "Intelligent code search across your project",
+    icon: "📂",
+    title: "Navbar Interativa",
+    content: "Menu responsivo com search e dropdown",
   },
 };

@@ -1,5 +1,23 @@
 import { Check, Star } from "lucide-react";
 
+const whatsappLinks = [
+  {
+    plan: "START",
+    text: "Oi, quero começar com o Plano START e colocar meu negócio online com profissionalismo. Pode me ajudar a dar o primeiro passo?",
+    url: "https://api.whatsapp.com/send?phone=5524998652938&text=Oi,%20quero%20come%C3%A7ar%20com%20o%20Plano%20START%20e%20colocar%20meu%20neg%C3%B3cio%20online%20com%20profissionalismo.%20Pode%20me%20ajudar%20a%20dar%20o%20primeiro%20passo%3F"
+  },
+  {
+    plan: "PRO",
+    text: "Oi, quero assinar o Plano PRO para minha empresa crescer e se destacar online. Vamos começar agora?",
+    url: "https://api.whatsapp.com/send?phone=5524998652938&text=Oi,%20quero%20assinar%20o%20Plano%20PRO%20para%20minha%20empresa%20crescer%20e%20se%20destacar%20online.%20Vamos%20come%C3%A7ar%20agora%3F"
+  },
+  {
+    plan: "PREMIUM",
+    text: "Oi, quero o Plano PREMIUM para vender online e dominar meu mercado digital. Quero começar imediatamente!",
+    url: "https://api.whatsapp.com/send?phone=5524998652938&text=Oi,%20quero%20o%20Plano%20PREMIUM%20para%20vender%20online%20e%20dominar%20meu%20mercado%20digital.%20Quero%20come%C3%A7ar%20imediatamente%21"
+  },
+];
+
 const plans = [
   {
     name: "START",
@@ -62,6 +80,11 @@ const plans = [
 ];
 
 export default function Pricing() {
+  const getWhatsAppLink = (planName) => {
+    const link = whatsappLinks.find(item => item.plan === planName);
+    return link ? link.url : "#";
+  };
+
   return (
     <section
       id="pricing"
@@ -139,15 +162,18 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <button
-                className={`w-full py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg font-semibold transition-all duration-300 mt-auto hover:scale-102 cursor-pointer text-sm sm:text-base ${
+              <a
+                href={getWhatsAppLink(plan.name)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-full py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg font-semibold transition-all duration-300 mt-auto hover:scale-102 cursor-pointer text-sm sm:text-base text-center block ${
                   plan.mostPopular
                     ? "bg-gradient-to-b from-blue-500 to-cyan-500"
                     : "bg-white/5 border border-white/10 hover:bg-white/10"
                 }`}
               >
                 Assinar
-              </button>
+              </a>
             </div>
           ))}
         </div>

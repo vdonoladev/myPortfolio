@@ -1,27 +1,27 @@
 const testimonials = [
   {
-    name: "Sarah Chen",
-    role: "Senior Developer",
+    name: "Mariana Alves",
+    role: "Gerente de Marketing na StudioMKT",
     image:
       "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200",
     content:
-      "This AI-powered development platform has revolutionized how we write code. The intelligent suggestions save us hours every day.",
+      "Trabalhar com o Víctor foi uma experiência excelente. Ele entendeu rapidamente o que nossa marca precisava e entregou um site moderno, rápido e fácil de gerenciar. O processo foi tranquilo do início ao fim.",
   },
   {
-    name: "Marcus Rodriguez",
-    role: "Tech Lead",
+    name: "Rafael Pereira",
+    role: "Fundador da RP Consultoria",
     image:
       "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200",
     content:
-      "The automated testing and debugging features are game-changers. We ship code faster and with more confidence than ever before.",
+      "O Víctor foi extremamente profissional e ágil. Sempre disponível para ajustar detalhes e garantir que tudo ficasse perfeito. Nosso novo site elevou muito a credibilidade da empresa.",
   },
   {
-    name: "Emily Watson",
-    role: "CTO",
+    name: "Camila Torres",
+    role: "Diretora Criativa na Agência Lume",
     image:
       "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200",
     content:
-      "Our development velocity increased by 300% since adopting this platform. It's like having a senior developer pair programming with every team member.",
+      "O que mais impressionou foi o cuidado do Víctor com a experiência do usuário. O site ficou leve, bonito e intuitivo — exatamente como queríamos. Recomendo sem pensar duas vezes.",
   },
 ];
 
@@ -36,11 +36,10 @@ export default function Testimonials() {
           {/* Left side - Header */}
           <div className="lg:w-1/2 w-full text-center lg:text-left">
             <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
-              What developers are saying about us
+              Depoimentos de clientes satisfeitos
             </h2>
             <p className="text-gray-400 text-base text-xl sm:text-lg max-w-2xl mx-auto">
-              Everything you need to build, test, and deploy applications with
-              AI-powered development tools.
+              Histórias de sucesso de clientes que confiaram no meu trabalho e obtiveram resultados excepcionais.
             </p>
           </div>
 

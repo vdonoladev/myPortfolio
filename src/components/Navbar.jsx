@@ -78,14 +78,14 @@ export default function Navbar({ scrolled }) {
               onClick={() => setMobileMenuIsOpen(false)}
               className="block text-gray-300 hover:text-white text-sm lg:text-base"
             >
-              Pricing
+              Preços
             </a>
             <a
               href="#testimonials"
               onClick={() => setMobileMenuIsOpen(false)}
               className="block text-gray-300 hover:text-white text-sm lg:text-base"
             >
-              Testimonials
+              Depoimentos
             </a>
           </div>
         </div>

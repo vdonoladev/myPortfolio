@@ -84,7 +84,7 @@ export const floatingCards = {
     contentColor: "text-purple-300",
     icon: "⚡",
     title: "Texto Animado",
-    content: "Efeito de digitação dinâmica no Hero",
+    content: "Efeito de digitação animada e dinâmica no Hero",
   },
   "Navbar.jsx": {
     bgColor: "bg-emerald-500/20",

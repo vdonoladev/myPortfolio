@@ -2,50 +2,63 @@ import { Check, Star } from "lucide-react";
 
 const plans = [
   {
-    name: "Starter",
-    price: "29.99",
-    description: "Perfect for individuals and small teams",
+    name: "START",
+    price: "990,00",
+    description: "Ideal para profissional autônomo",
     features: [
-      "Up to 5 team members",
-      "10GB storage",
-      "Basic analytics",
-      "Email support",
-      "API access",
-      "Mobile app",
+      "Domínio (.com.br)",
+      "Hospedagem Profissional",
+      "Email Profissional",
+      "Certificado SSL",
+      "Treinamento",
+      "1 (uma) página personalizada",
+      "Formulário de contato e integração com WhatsApp",
+      "Links para redes sociais",
+      "Design moderno e responsivo",
+      "Google Maps integrado",
+      "2 (duas) revisões incluídas",
+      "30 (trinta) dias de suporte gratuito",
     ],
     mostPopular: false,
   },
   {
-    name: "Professional",
-    price: "79.99",
-    description: "Best for growing businesses",
+    name: "PRO",
+    price: "1.490,00",
+    description: "Ideal para pequenas empresas",
     features: [
-      "Up to 25 team members",
-      "100GB storage",
-      "Advanced analytics",
-      "Priority support",
-      "API access",
-      "Mobile app",
-      "Custom integrations",
-      "Advanced security",
+      "Domínio (.com.br)",
+      "Hospedagem Profissional",
+      "Email Profissional",
+      "Certificado SSL",
+      "Treinamento",
+      "Até 5 páginas personalizadas",
+      "SEO básico",
+      "Design moderno e responsivo",
+      "Google Maps integrado",
+      "2 (duas) revisões incluídas",
+      "30 (trinta) dias de suporte gratuito",
+      "E muito mais",
     ],
     mostPopular: true,
   },
   {
-    name: "Enterprise",
-    price: "199.99",
-    description: "For large organizations",
+    name: "PREMIUM",
+    price: "2.740,00",
+    description: "Ideal para empresas com loja virtual",
     features: [
-      "Unlimited team members",
-      "Unlimited storage",
-      "Enterprise analytics",
-      "24/7 phone support",
-      "API access",
-      "Mobile app",
-      "Custom integrations",
-      "Advanced security",
-      "Dedicated account manager",
-      "Custom SLA",
+      "Domínio (.com.br)",
+      "Hospedagem Profissional",
+      "Email Profissional",
+      "Certificado SSL",
+      "Treinamento",
+      "Todas as páginas do plano PRO + páginas extras da loja virtual",
+      "Design moderno e responsivo",
+      "Google Maps integrado",
+      "Layout profissional",
+      "SEO avançado",
+      "3 (três) revisões incluídas",
+      "30 (trinta) dias de suporte gratuito",
+      "E muito mais",
     ],
     mostPopular: false,
   },
@@ -61,16 +74,15 @@ export default function Pricing() {
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
             <span className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
-              Simple, Transparent
+              Planos Profissionais
             </span>
             <br />
             <span className="bg-gradient-to-b from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Pricing Plans
+              Para Seu Negócio
             </span>
           </h2>
           <p className="text-gray-400 text-base text-xl sm:text-lg max-w-2xl mx-auto">
-            Choose the perfect plan for your needs. All plans include a 14-day
-            free trial.
+            Escolha o plano que melhor se adapta às suas necessidades.
           </p>
         </div>
 
@@ -89,7 +101,7 @@ export default function Pricing() {
                 <div className="absolute -top-2 sm:-top-3 left-1/2 transform -translate-x-1/2 z-10">
                   <div className="flex items-center space-x-1 px-3 sm:px-4 py-1 sm:py-1.5 bg-gradient-to-b from-blue-500 to-cyan-500 rounded-full text-xs sm:text-sm font-semibold shadow-lg">
                     <Star className="w-3 h-3 sm:w-3 sm:h-3 fill-white" />
-                    <span>Most Popular</span>
+                    <span>Mais Popular</span>
                   </div>
                 </div>
               )}
@@ -106,10 +118,10 @@ export default function Pricing() {
                     className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text 
                   text-transparent"
                   >
-                    ${plan.price}
+                    R${plan.price}
                   </span>
                   <span className="text-gray-400 ml-1 sm:ml-2 text-sm sm:text-base">
-                    /month
+                    /ano
                   </span>
                 </div>
               </div>
@@ -137,7 +149,7 @@ export default function Pricing() {
                     : "bg-white/5 border border-white/10 hover:bg-white/10"
                 }`}
               >
-                Get Started
+                Assinar
               </button>
             </div>
           ))}
@@ -145,9 +157,9 @@ export default function Pricing() {
 
         <div className="mt-8 sm:mt-12 text-center">
           <p className="text-gray-400 text-base text-xl">
-            Need a custom plan?{" "}
-            <a href="#" className="text-blue-400 hover:text-blue-300">
-              Contact our sales team
+            Precisa de um plano personalizado?{" "}
+            <a href="mailto:contato.victordonolaferreira@outlook.com" className="text-blue-400 hover:text-blue-300">
+              Entre em contato
             </a>
           </p>
         </div>

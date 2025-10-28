@@ -3,20 +3,19 @@ import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const features = [
   {
-    title: "AI Code Completion",
+    title: "Desenvolvimento Front-End",
     description:
-      "Intelligent code suggestions powered by advanced AI that learns from your coding patterns. Get real-time assistance with syntax, logic, and best practices.",
-    codeSnippet: `function handleSubmit() {
-  // AI suggests next line
-  const data = await fetch("/api/submit")
-  // Auto-completed by AI
-}`,
+      "Criação de interfaces modernas, responsivas e otimizadas para uma experiência de usuário fluida em todos os dispositivos.",
+    codeSnippet: `// Toggle menu simples
+    document.querySelector("#btn").addEventListener("click", () => {
+      document.querySelector("#menu").classList.toggle("hidden");
+    });`,
     imagePosition: "left",
   },
   {
-    title: "Automated Testing",
+    title: "Desenvolvimento Back-End",
     description:
-      "Generate comprehensive test suites automatically. Our AI analyzes your code and creates unit tests, integration tests, and edge case coverage.",
+      "Construção de APIs e integrações robustas, garantindo performance, segurança e escalabilidade para seus projetos web.",
     codeSnippet: `describe("User Authentication", () => {
   // Auto-generated tests
   it("should login successfully", () => {
@@ -26,12 +25,13 @@ const features = [
     imagePosition: "right",
   },
   {
-    title: "Smart Debugging",
+    title: "Projetos Freelance",
     description:
-      "Identify and fix bugs before they reach production. AI-powered error detection and resolution suggestions help you debug faster.",
-    codeSnippet: `// AI suggests fix:
-const result = await processData(input)
-// Fixed: Added await keyword`,
+      "Desenvolvimento de sites e aplicações sob demanda, do conceito à publicação, entregando resultados que destacam sua marca.",
+    codeSnippet: `// Alterar conteúdo
+    document.querySelector("#btn").addEventListener("click", () => {
+      document.querySelector("#text").textContent = "Projeto atualizado!";
+    });`,
     imagePosition: "left",
   },
 ];
@@ -46,11 +46,11 @@ export default function Features() {
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <h2 className="text-5xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
             <span className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
-              Your Complete Development
+              Minhas principais
             </span>
             <br />
             <span className="bg-gradient-to-b from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Workflow
+              habilidades
             </span>
           </h2>
         </div>

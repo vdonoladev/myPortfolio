@@ -34,7 +34,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-400 mb-4 sm:mb-6 max-w-xs mx-auto sm:mx-0 text-sm sm:text-base">
-              Desenvolvimento de sites e aplicações modernas, rápidas e responsivas, criadas sob medida para sua marca.
+              Desenvolvimento de sites e aplicações modernas, rápidas e
+              responsivas, criadas sob medida para sua marca.
             </p>
             <div className="flex justify-center sm:justify-start space-x-3 sm:space-x-4">
               <a
@@ -94,19 +95,19 @@ export default function Footer() {
             </p>
             <div className="flex items-center space-x-4 sm:space-x-6 text-xs sm:text-sm">
               <a
-                href="/privacy-policy"
+                href="#"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
               >
                 Privacy Policy
               </a>
               <a
-                href="/terms-of-service"
+                href="#"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
               >
                 Terms of Service
               </a>
               <a
-                href="/cookie-settings"
+                href="#"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
               >
                 Cookie Settings

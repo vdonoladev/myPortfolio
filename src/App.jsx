@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Pricing from "./components/Pricing";
+import Projects from "./components/Projects";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
@@ -23,6 +24,7 @@ function App() {
       <Navbar scrolled={scrolled} />
       <Hero />
       <Features />
+      <Projects />
       <Pricing />
       <Testimonials />
       <Footer />

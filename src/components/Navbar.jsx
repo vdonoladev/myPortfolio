@@ -37,6 +37,12 @@ export default function Navbar({ scrolled }) {
               Habilidades
             </a>
             <a
+              href="#projects"
+              className="text-gray-300 hover:text-white text-sm lg:text-base"
+            >
+              Projetos
+            </a>
+            <a
               href="#pricing"
               className="text-gray-300 hover:text-white text-sm lg:text-base"
             >
@@ -72,6 +78,13 @@ export default function Navbar({ scrolled }) {
               className="block text-gray-300 hover:text-white text-sm lg:text-base"
             >
               Habilidades
+            </a>
+            <a
+              href="#projects"
+              onClick={() => setMobileMenuIsOpen(false)}
+              className="block text-gray-300 hover:text-white text-sm lg:text-base"
+            >
+              Projetos
             </a>
             <a
               href="#pricing"

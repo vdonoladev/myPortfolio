@@ -5,9 +5,9 @@ const projects = [
     title: "Portfolio Dev",
     description:
       "Plataforma completa de e-commerce com carrinho, pagamentos integrados e painel administrativo. Desenvolvido com React e Node.js.",
-    image: "public/projetos/p1.png",
+    image: "/project/p1.png",
     tags: ["HTML", "CSS", "JavaScript"],
-    liveUrl: "https://portfoliodev-vdonoladev.vercel.app/,
+    liveUrl: "https://portfoliodev-vdonoladev.vercel.app/",
     githubUrl: "https://github.com/vdonoladev/portfolioDev",
   },
   {

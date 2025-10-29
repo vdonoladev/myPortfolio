@@ -106,7 +106,7 @@ export default function Footer() {
                 Terms of Service
               </a>
               <a
-                href="#"
+                href="/cookie-settings"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
               >
                 Cookie Settings

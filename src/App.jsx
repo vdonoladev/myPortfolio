@@ -4,6 +4,7 @@ import Features from "./components/Features";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import CookieSettings from "./components/CookieSettings";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Pricing />
       <Testimonials />
       <Footer />
+      <CookieSettings />
     </div>
   );
 }

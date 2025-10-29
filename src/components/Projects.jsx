@@ -2,13 +2,13 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-commerce Moderno",
+    title: "Portfolio Dev",
     description:
       "Plataforma completa de e-commerce com carrinho, pagamentos integrados e painel administrativo. Desenvolvido com React e Node.js.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&auto=format&fit=crop",
-    tags: ["React", "Node.js", "MongoDB"],
-    liveUrl: "https://exemplo.com",
-    githubUrl: "https://github.com/vdonoladev",
+    image: "public/projetos/p1.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://portfoliodev-vdonoladev.vercel.app/,
+    githubUrl: "https://github.com/vdonoladev/portfolioDev",
   },
   {
     title: "Dashboard Analytics",

@@ -101,7 +101,3 @@ Se for se inspirar, dá aquele crédito justo. 🤝
 Esse site não é só um portfólio — é um **cartão de visita digital**.
 Foi pensado para transmitir profissionalismo, técnica e estilo.
 Cada linha de código tem um propósito: **mostrar o que faço, e fazer bem feito.**
-
----
-
-Quer que eu adicione uma seção de **deploy (ex: Vercel)** e **badges** do GitHub (build, version, etc.) pra deixar o README ainda mais “premium”?

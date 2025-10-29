@@ -4,26 +4,26 @@ const projects = [
   {
     title: "Portfolio Dev",
     description:
-      "Plataforma completa de e-commerce com carrinho, pagamentos integrados e painel administrativo. Desenvolvido com React e Node.js.",
+      "Um portfólio single-page moderno e responsivo, feito para desenvolvedores que querem mostrar seu trabalho com estilo.",
     image: "/project/p1.png",
     tags: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://portfoliodev-vdonoladev.vercel.app/",
     githubUrl: "https://github.com/vdonoladev/portfolioDev",
   },
   {
-    title: "Dashboard Analytics",
+    title: "Spotlight Portfolio",
     description:
-      "Sistema de análise de dados em tempo real com gráficos interativos e relatórios personalizados para empresas.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
-    tags: ["React", "TypeScript", "Charts.js"],
-    liveUrl: "https://exemplo.com",
-    githubUrl: "https://github.com/vdonoladev",
+      "Portfolio moderno e interativo com animações 3D e efeitos visuais impressionantes.",
+    image: "/project/p2.png",
+    tags: ["Next.js", "TypeScript", "React", "TailwindCSS", "Framer Motion", "Three.js", "Aceternity UI"],
+    liveUrl: "https://spotlight-portfolio-vdonoladev.vercel.app/",
+    githubUrl: "https://github.com/vdonoladev/SpotlightPortfolio",
   },
   {
     title: "App de Delivery",
     description:
       "Aplicativo mobile-first para delivery de comida com sistema de pedidos, rastreamento em tempo real e avaliações.",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&fit=crop",
+    image: "/project/p3.png",
     tags: ["React Native", "Firebase", "API Rest"],
     liveUrl: "https://exemplo.com",
     githubUrl: "https://github.com/vdonoladev",
@@ -32,7 +32,7 @@ const projects = [
     title: "Landing Page Corporativa",
     description:
       "Website institucional com design moderno, animações suaves e otimização SEO para empresa de tecnologia.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
+    image: "/project/p4.png",
     tags: ["Next.js", "Tailwind", "SEO"],
     liveUrl: "https://exemplo.com",
     githubUrl: "https://github.com/vdonoladev",
@@ -41,7 +41,7 @@ const projects = [
     title: "Sistema de Gestão",
     description:
       "ERP personalizado para gestão de estoque, vendas e clientes com relatórios detalhados e integração com APIs.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop",
+    image: "/project/p5.png",
     tags: ["Vue.js", "Laravel", "MySQL"],
     liveUrl: "https://exemplo.com",
     githubUrl: "https://github.com/vdonoladev",
@@ -50,7 +50,7 @@ const projects = [
     title: "Portfólio Interativo",
     description:
       "Site portfólio com animações 3D, transições suaves e design responsivo para destacar projetos criativos.",
-    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&auto=format&fit=crop",
+    image: "/project/p6.png",
     tags: ["Three.js", "React", "GSAP"],
     liveUrl: "https://exemplo.com",
     githubUrl: "https://github.com/vdonoladev",

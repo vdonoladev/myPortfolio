@@ -1,47 +1,33 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 
-/* const footerLinks = {
-  Product: ["Features", "Pricing", "Security", "Roadmap", "Changelog"],
-  Company: ["About", "Blog", "Careers", "Press", "Partners"],
-  Resources: [
-    "Documentation",
-    "Help Center",
-    "Community",
-    "API Reference",
-    "Status",
-  ],
-  Legal: ["Privacy", "Terms", "Cookie Policy", "Licenses", "Compliance"],
-};
-*/
-
 const footerLinks = {
   Product: [
-    { name: "Features", url: "/features" },
-    { name: "Pricing", url: "/pricing" },
-    { name: "Security", url: "/security" },
-    { name: "Roadmap", url: "https://github.com/vdonoladev/roadmap" },
-    { name: "Changelog", url: "https://github.com/vdonoladev/changelog" },
+    { name: "Features", url: "https://github.com/vdonoladev/myPortfolio/blob/main/documents/features.md" },
+    { name: "Pricing", url: "https://github.com/vdonoladev/myPortfolio/blob/main/documents/pricing.md" },
+    { name: "Security", url: "https://github.com/vdonoladev/myPortfolio/blob/main/documents/security.md" },
+    { name: "Roadmap", url: "#" },
+    { name: "Changelog", url: "#" },
   ],
   Company: [
-    { name: "About", url: "/about" },
-    { name: "Blog", url: "https://vdonoladev.com/blog" },
-    { name: "Careers", url: "/careers" },
+    { name: "About", url: "https://github.com/vdonoladev/myPortfolio/blob/main/documents/about.md" },
+    { name: "Blog", url: "https://medium.com/@vdonoladev" },
+    { name: "Careers", url: "#" },
     { name: "Press", url: "#" },
     { name: "Partners", url: "#" },
   ],
   Resources: [
-    { name: "Documentation", url: "https://docs.vdonoladev.com" },
-    { name: "Help Center", url: "/help" },
-    { name: "Community", url: "https://discord.gg/vdonoladev" },
-    { name: "API Reference", url: "https://api.vdonoladev.com" },
-    { name: "Status", url: "https://status.vdonoladev.com" },
+    { name: "Documentation", url: "https://github.com/vdonoladev/myPortfolio" },
+    { name: "Help Center", url: "https://github.com/vdonoladev/myPortfolio/blob/main/documents/help.md" },
+    { name: "Community", url: "#" },
+    { name: "API Reference", url: "#" },
+    { name: "Status", url: "#" },
   ],
   Legal: [
-    { name: "Privacy", url: "/privacy" },
-    { name: "Terms", url: "/terms" },
-    { name: "Cookie Policy", url: "/cookies" },
-    { name: "Licenses", url: "#" },
-    { name: "Compliance", url: "#" },
+    { name: "Privacy", url: "https://github.com/vdonoladev/myPortfolio/blob/main/documents/privacy.md" },
+    { name: "Terms", url: "https://github.com/vdonoladev/myPortfolio/blob/main/documents/terms.md" },
+    { name: "Cookie Policy", url: "https://github.com/vdonoladev/myPortfolio/blob/main/documents/cookies.md" },
+    { name: "Licenses", url: "https://github.com/vdonoladev/myPortfolio/blob/main/documents/licenses.md" },
+    { name: "Compliance", url: "https://github.com/vdonoladev/myPortfolio/blob/main/documents/compliance.md" },
   ],
 };
 

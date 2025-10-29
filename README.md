@@ -81,7 +81,7 @@ Este projeto foi construído com **React**, **TailwindCSS** e muito cuidado nos 
 
 Se quiser trocar uma ideia sobre projetos, colaborações ou freelas:
 
-* 🌐 **Site:** [https://vdonola.dev](https://vdonoladev.vercel.app/)
+* 🌐 **Site:** [https://vdonoladev.vercel.app/](https://vdonoladev.vercel.app/)
 * 💼 **LinkedIn:** [linkedin.com/in/vdonoladev](https://linkedin.com/in/vdonoladev)
 * 💻 **GitHub:** [github.com/vdonoladev](https://github.com/vdonoladev)
 * ✉️ **Email:** [contato.victordonolaferreira@outlook.com](mailto:contato.victordonolaferreira@outlook.com)

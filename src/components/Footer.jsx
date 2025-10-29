@@ -1,6 +1,6 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 
-const footerLinks = {
+/* const footerLinks = {
   Product: ["Features", "Pricing", "Security", "Roadmap", "Changelog"],
   Company: ["About", "Blog", "Careers", "Press", "Partners"],
   Resources: [
@@ -11,6 +11,38 @@ const footerLinks = {
     "Status",
   ],
   Legal: ["Privacy", "Terms", "Cookie Policy", "Licenses", "Compliance"],
+};
+*/
+
+const footerLinks = {
+  Product: [
+    { name: "Features", url: "/features" },
+    { name: "Pricing", url: "/pricing" },
+    { name: "Security", url: "/security" },
+    { name: "Roadmap", url: "https://github.com/vdonoladev/roadmap" },
+    { name: "Changelog", url: "https://github.com/vdonoladev/changelog" },
+  ],
+  Company: [
+    { name: "About", url: "/about" },
+    { name: "Blog", url: "https://vdonoladev.com/blog" },
+    { name: "Careers", url: "/careers" },
+    { name: "Press", url: "#" },
+    { name: "Partners", url: "#" },
+  ],
+  Resources: [
+    { name: "Documentation", url: "https://docs.vdonoladev.com" },
+    { name: "Help Center", url: "/help" },
+    { name: "Community", url: "https://discord.gg/vdonoladev" },
+    { name: "API Reference", url: "https://api.vdonoladev.com" },
+    { name: "Status", url: "https://status.vdonoladev.com" },
+  ],
+  Legal: [
+    { name: "Privacy", url: "/privacy" },
+    { name: "Terms", url: "/terms" },
+    { name: "Cookie Policy", url: "/cookies" },
+    { name: "Licenses", url: "#" },
+    { name: "Compliance", url: "#" },
+  ],
 };
 
 export default function Footer() {
@@ -71,13 +103,19 @@ export default function Footer() {
                     {category}
                   </h3>
                   <ul className="space-y-2 sm:space-y-3">
-                    {links.map((link) => (
-                      <li key={link}>
+                    {links.map(({ name, url }) => (
+                      <li key={name}>
                         <a
-                          href="#"
+                          href={url}
+                          target={url.startsWith("http") ? "_blank" : "_self"}
+                          rel={
+                            url.startsWith("http")
+                              ? "noopener noreferrer"
+                              : undefined
+                          }
                           className="text-gray-400 hover:text-white transition-colors duration-200 text-xs sm:text-sm"
                         >
-                          {link}
+                          {name}
                         </a>
                       </li>
                     ))}

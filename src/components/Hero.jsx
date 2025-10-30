@@ -54,7 +54,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-md sm:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto lg:mx-0 mb-6 sm:mb-8 animate-in slide-in-from-bottom duration-700 delay-200 leading-relaxed">
-              Desenvolvimento web é mais do que código — é sobre criar interfaces que contam histórias, sistemas que resolvem problemas e experiências que marcam. Meu foco é transformar boas ideias em produtos digitais sólidos, rápidos e elegantes.
+              Meu foco é transformar boas ideias em produtos digitais sólidos, rápidos e elegantes.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in slide-in-from-bottom duration-700 delay-300">

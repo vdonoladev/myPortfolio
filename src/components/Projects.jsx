@@ -2,6 +2,24 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
+    title: "drewStudio",
+    description:
+      "Drew Studio é um site moderno e responsivo desenvolvido para uma agência criativa que transforma marcas em experiências visuais marcantes.",
+    image: "/project/p7.png",
+    tags: ["HTML", "Tailwind CSS", "JavaScript", "Flowbite"],
+    liveUrl: "https://drewstudio-vdonoladev.vercel.app/",
+    githubUrl: "https://github.com/vdonoladev/drewStudio",
+  },
+  {
+    title: "Tutor",
+    description:
+      "Tutor é uma landing page moderna e responsiva desenvolvida para promover cursos em vídeo, combinando clareza, design e foco na conversão.",
+    image: "/project/p8.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://tutor-vdonoladev.vercel.app/",
+    githubUrl: "https://github.com/vdonoladev/tutor",
+  },
+  {
     title: "Portfolio Dev",
     description:
       "Um portfólio single-page moderno e responsivo, feito para desenvolvedores que querem mostrar seu trabalho com estilo.",
@@ -36,24 +54,6 @@ const projects = [
     tags: ["HTML", "CSS", "JavaScript", "jQuery"],
     liveUrl: "https://insurancefirm.vercel.app/",
     githubUrl: "https://github.com/vdonoladev/InsuranceFirm",
-  },
-  {
-    title: "food",
-    description:
-      "food é uma landing page moderna e responsiva criada para um negócio de delivery.",
-    image: "/project/p5.png",
-    tags: ["HTML", "CSS", "JavaScript", "jQuery"],
-    liveUrl: "https://food-vdonoladev.netlify.app/",
-    githubUrl: "https://github.com/vdonoladev/food",
-  },
-  {
-    title: "linkfree",
-    description:
-      "LinkFree é um clone do Linktree, desenvolvido com Astro e Tailwind CSS. Ele oferece uma interface limpa e responsiva para que usuários possam compartilhar vários links em uma única página personalizada.",
-    image: "/project/p6.png",
-    tags: ["Astro", "Tailwind CSS"],
-    liveUrl: "https://mylinkfree.vercel.app/",
-    githubUrl: "https://github.com/vdonoladev/linkfree",
   },
 ];
 
